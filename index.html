@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Game of Life</title>
+  <link rel='stylesheet' href='styles.css'>
+</head>
+<body>
+  <script src = 'script.js'></script>
+  <h1>Game of Life: </h1>
+  <fieldset>
+    <p>Enter number of rows: </p>
+    <input type="text" id = 'height'>
+    <p>Enter number of columns: </p>
+    <input type="text" id = 'width'>
+    <p></p>
+    <input type="button" value='Generate!' onclick='emptyBoard()'>
+    <input type="button" value='Next step!' onclick='populate()'>
+    <input type="button" value='Endless!' onclick='endless()'>
+    <div id = 'stopKran'></div>
+  </fieldset>
+  <canvas id='life-board'></canvas>
+</body>
+</html>
